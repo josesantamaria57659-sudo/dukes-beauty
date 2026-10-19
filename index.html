@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duke's Beauty Studio | By Lina Duque — Tricología y Belleza Integral</title>
+  <meta name="description" content="Expertos en el cuidado integral de tu cabello y tu piel. Diagnóstico capilar con capilógrafo, tricología, coloración, balayage, tratamientos faciales y más." />
+  <!-- Fuentes elegantes de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR -->
+  <div class="topbar">
+    <p>✨ Salud Capilar • Belleza Real • Resultados Visibles | <strong>Diagnóstico Capilar con Capilógrafo SIN COSTO ADICIONAL</strong> ✨</p>
+  </div>
+
+  <!-- NAVEGACIÓN -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand">
+        <img src="logo.png" alt="Duke's Beauty Studio Logo" class="brand-logo" onerror="this.style.display='none'" />
+        <div class="brand-text">
+          <span class="brand-title">DUKE'S</span>
+          <span class="brand-subtitle">BEAUTY STUDIO <small>by Lina Duque</small></span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#tricologia">Tricología</a>
+        <a href="#catalogo">Catálogo y Precios</a>
+        <a href="#pilares">Piel y Cabello</a>
+        <a href="#contacto" class="btn-nav">Agendar Cita</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO / PORTADA -->
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge">CUIDADO PROFESIONAL Y TRICOLOGÍA DEL CABELLO</span>
+        <h1>Expertos en el cuidado integral de tu <em>cabello y tu piel</em></h1>
+        <p class="hero-lead">
+          Porque tu belleza merece un cuidado profesional, personalizado y con resultados reales. 
+          En <strong>Duke's Beauty Studio by Lina Duque</strong> unimos ciencia capilar, estética avanzada y productos de alta calidad.
+        </p>
+        <div class="hero-buttons">
+          <a href="#catalogo" class="btn btn-primary">Ver Catálogo y Precios</a>
+          <a href="#contacto" class="btn btn-outline">Diagnóstico Gratis</a>
+        </div>
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <span class="highlight-icon">👑</span>
+            <span>Asesoría Personalizada</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🔬</span>
+            <span>Diagnóstico con Capilógrafo</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🌿</span>
+            <span>Productos de Alta Calidad</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-card">
+          <img src="lina.jpg" alt="Lina Duque - Duke's Beauty Studio" class="hero-img" onerror="this.src='logo.png'" />
+          <div class="hero-floating-quote">
+            "Cabello sano también es belleza"
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN TRICOLOGÍA -->
+  <section id="tricologia" class="section tricologia-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">CIENCIA Y SALUD CAPILAR</span>
+        <h2>Tricología y Diagnóstico Avanzado</h2>
+        <p>Examinamos a profundidad la salud de tu cuero cabelludo y la fibra del cabello con microcámara de alta magnificación (Capilógrafo).</p>
+      </div>
+
+      <div class="trico-grid">
+        <div class="trico-card">
+          <div class="trico-number">01</div>
+          <h3>Diagnóstico con Capilógrafo</h3>
+          <p>Evaluación visual de alta precisión para detectar necesidades reales del folículo y la hebra capilar <strong>sin costo adicional</strong>.</p>
+        </div>
+        <div class="trico-card">
+          <div class="trico-number">02</div>
+          <h3>Prevención y Caída</h3>
+          <p>Tratamientos focalizados para controlar la caída del cabello, estimular el crecimiento y oxigenar el cuero cabelludo.</p>
+        </div>
+        <div class="trico-card">
+          <div class="trico-number">03</div>
+          <h3>Fortalecimiento Total</h3>
+          <p>Recuperamos la estructura interna de la fibra para lograr un cabello más fuerte, brillante, sedoso y saludable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CATÁLOGO DE 14 SERVICIOS Y PRECIOS -->
+  <section id="catalogo" class="section catalogo-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">NUESTROS SERVICIOS</span>
+        <h2>Catálogo de Asesoría de Imagen, Cabello y Piel</h2>
+        <p>Selecciona una categoría o busca el tratamiento ideal para ti. Haz clic en cualquier servicio para agendarlo.</p>
+      </div>
+
+      <!-- Controles de filtro y búsqueda -->
+      <div class="catalog-controls">
+        <div class="filter-buttons" id="filterButtons">
+          <button class="filter-btn active" data-filter="todos">Todos (14)</button>
+          <button class="filter-btn" data-filter="tricologia">Tricología y Tratamientos</button>
+          <button class="filter-btn" data-filter="corte-color">Corte, Peinados y Color</button>
+          <button class="filter-btn" data-filter="rostro">Cejas, Pestañas y Maquillaje</button>
+          <button class="filter-btn" data-filter="piel-productos">Piel y Productos</button>
+        </div>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Buscar servicio (ej. Balayage, Cejas, Botox...)" />
+        </div>
+      </div>
+
+      <!-- Contenedor dinámico de tarjetas de servicios -->
+      <div class="services-grid" id="servicesGrid">
+        <!-- Se llena automáticamente desde script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PILARES DE BELLEZA INTEGRAL -->
+  <section id="pilares" class="section pilares-section">
+    <div class="container pilares-grid">
+      <div class="pilar-box">
+        <span class="pilar-tag">CABELLO SANO</span>
+        <h3>Cuidado Profesional del Cabello</h3>
+        <ul class="check-list">
+          <li>Corte, estilo y diseño de imagen</li>
+          <li>Coloración profesional, Balayage y Highlights</li>
+          <li>Tratamientos capilares y Detox del cuero cabelludo</li>
+          <li>Hidratación profunda, Nanoplastia y Botox capilar</li>
+          <li>Brillo, suavidad y colocación de extensiones</li>
+        </ul>
+      </div>
+
+      <div class="pilar-box">
+        <span class="pilar-tag">BELLEZA ES SALUD</span>
+        <h3>Cuidado de la Piel y Rostro</h3>
+        <ul class="check-list">
+          <li>Limpieza facial profunda e higiene</li>
+          <li>Hidratación y luminosidad facial</li>
+          <li>Tratamientos anti-edad, flacidez, manchas y acné</li>
+          <li>Lifting de pestañas, laminado de cejas y henna</li>
+          <li>Rutinas personalizadas y productos para casa</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE RESERVA / CONTACTO -->
+  <section id="contacto" class="section contacto-section">
+    <div class="container contacto-grid">
+      <div class="contacto-info">
+        <span class="section-subtitle">TU MEJOR VERSIÓN EMPIEZA AQUÍ</span>
+        <h2>Agenda tu Cita o Diagnóstico</h2>
+        <p>Completa el formulario para enviarnos tu solicitud directamente por WhatsApp con el servicio que deseas realizarte.</p>
+
+        <div class="valores-list">
+          <div class="valor-item">
+            <strong>✔ Diagnóstico Inicial Gratis:</strong> Incluye evaluación con capilógrafo.
+          </div>
+          <div class="valor-item">
+            <strong>✔ Atención Personalizada:</strong> Por Lina Duque, especialista en tricología y belleza integral.
+          </div>
+          <div class="valor-item">
+            <strong>✔ Resultados Visibles:</strong> Tratamientos adaptados a la necesidad de tu piel y cabello.
+          </div>
+        </div>
+      </div>
+
+      <div class="contacto-form-card">
+        <form id="bookingForm">
+          <div class="form-group">
+            <label for="clientName">Tu Nombre Completo</label>
+            <input type="text" id="clientName" required placeholder="Ej. María Gómez" />
+          </div>
+
+          <div class="form-group">
+            <label for="serviceSelect">Servicio de Interés</label>
+            <select id="serviceSelect" required>
+              <!-- Opciones cargadas desde script.js -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="preferredDate">Fecha o Día Preferido</label>
+            <input type="date" id="preferredDate" />
+          </div>
+
+          <div class="form-group">
+            <label for="clientNotes">Comentarios adicionales (largo de cabello, dudas, etc.)</label>
+            <textarea id="clientNotes" rows="3" placeholder="Cuéntanos brevemente qué te gustaría hacerte..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            💬 Enviar Reserva por WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>DUKE'S BEAUTY STUDIO</h3>
+        <p>By Lina Duque — Tu belleza, nuestra pasión.</p>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; <span id="currentYear"></span> Duke's Beauty Studio. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
